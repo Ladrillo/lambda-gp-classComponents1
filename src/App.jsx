@@ -9,5 +9,5 @@ ReactDOM.render(
     <ContainerClassy />
     <ContainerFunctional />
   </>,
-  document.querySelector('#target1')
+  document.querySelector('#target1'),
 );
