@@ -9,10 +9,12 @@ const initialFriendsList = [
 
 export class ContainerClassy extends React.Component {
   render() {
-    return 'Classy';
+    return (
+      <div>Classy</div>
+    );
   }
 }
 
 export function ContainerFunctional() {
-  return 'Fuctional';
+  return <div>Functional</div>;
 }
