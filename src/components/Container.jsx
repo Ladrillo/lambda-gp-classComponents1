@@ -9,9 +9,24 @@ const initialFriendsList = [
 
 // let's display a counter along with buttons to increment and decrement
 export class ContainerClassy extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      friendsList: initialFriendsList,
+    };
+  }
 
+  render() {
+    return (
+      <div>
+        {
+          
+        }
+      </div>
+    );
+  }
 }
 
 export function ContainerFunctional() {
-
+  return null;
 }
