@@ -17,8 +17,10 @@ export class ContainerClassy extends Component {
     };
   }
 
-  changerHandler = (event) => {
-
+  changeHandler = (event) => {
+    // we need to "mutate" this.state.friendName to reflect what the user types
+    // I need to get the value, which is buried in event.target.value
+    this.setState({ friendName: event.target.value });
   }
 
   render() {
@@ -32,7 +34,7 @@ export class ContainerClassy extends Component {
         }
         <input
           value={this.state.friendName}
-          onChange={this.changerHandler}
+          onChange={this.changeHandler}
           type="text"
         />
       </div>
