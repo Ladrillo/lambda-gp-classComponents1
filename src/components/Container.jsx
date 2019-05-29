@@ -33,6 +33,12 @@ export function ContainerFunctional() {
   );
 }
 
-function Displayer({ type, count }) {
-  return <div>{type} count is {count}</div>;
+function Displayer({ type, count, increment, decrement }) {
+  return (
+    <div>
+      {type} count is {count}
+      <button onClick={increment}>increment</button>
+      <button onClick={decrement}>decrement</button>
+    </div>
+  );
 }
