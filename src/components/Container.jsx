@@ -49,15 +49,23 @@ export class ContainerClassy extends Component {
             <div key={friendObj.id}>{friendObj.name}</div>
           ))
         }
-        <input
-          value={this.state.friendName}
-          onChange={this.changeHandler}
-          type="text"
-        />
-        <button onClick={this.addFriend}>Add friend!!</button>
+
       </div>
     );
   }
+}
+
+function FriendAdder({ friendName, changeHandler, addFriend }) {
+  return (
+    <div>
+      <input
+        value={friendName}
+        onChange={changeHandler}
+        type="text"
+      />
+      <button onClick={addFriend}>Add friend!!</button>
+    </div>
+  );
 }
 
 export function ContainerFunctional() {
