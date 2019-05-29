@@ -18,6 +18,6 @@ export class ContainerClassy extends Component {
 
 export function ContainerFunctional() {
   return (
-    <div>I am functional</div>
+    <div>I am functional!!!</div>
   );
 }
