@@ -40,13 +40,23 @@ export class ContainerClassy extends Component {
     });
   }
 
+  removeFriend = id => {
+    const newFriendsList = this.state.friendsList.filter(fr => fr.id !== id);
+    this.setState({
+      friendsList: newFriendsList,
+    });
+  }
+
   render() {
     return (
       <div>
         <h3>My friends:</h3>
         {
           this.state.friendsList.map(friendObj => (
-            <div key={friendObj.id}>{friendObj.name}</div>
+            <div key={friendObj.id}>
+              {friendObj.name}
+              <button onClick={() => this.removeFriend(friendObj.id)}>delete</button>
+            </div>
           ))
         }
         <FriendAdder
