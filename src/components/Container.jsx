@@ -20,7 +20,9 @@ export class ContainerClassy extends Component {
   changeHandler = (event) => {
     // we need to "mutate" this.state.friendName to reflect what the user types
     // I need to get the value, which is buried in event.target.value
-    this.setState({ friendName: event.target.value });
+    this.setState({
+      friendName: event.target.value,
+    });
   }
 
   addFriend = () => {
@@ -32,6 +34,7 @@ export class ContainerClassy extends Component {
 
     this.setState({
       friendsList: this.state.friendsList.concat(newFriend),
+      friendName: '',
     });
   }
 
