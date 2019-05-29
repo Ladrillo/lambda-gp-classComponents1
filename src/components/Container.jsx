@@ -49,7 +49,11 @@ export class ContainerClassy extends Component {
             <div key={friendObj.id}>{friendObj.name}</div>
           ))
         }
-
+        <FriendAdder
+          friendName={this.state.friendName}
+          changeHandler={this.changeHandler}
+          addFriend={this.addFriend}
+        />
       </div>
     );
   }
