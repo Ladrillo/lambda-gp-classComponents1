@@ -26,8 +26,8 @@ export class ContainerClassy extends Component {
 
 export function ContainerFunctional() {
   const [count, setCount] = useState(0);
-  const [happy, setHappy] = useState(true);
   const increment = () => setCount(count + 1);
+  const decrement = () => setCount(count - 1);
 
   return (
     <Displayer
