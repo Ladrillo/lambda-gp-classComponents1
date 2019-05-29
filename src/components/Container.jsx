@@ -23,6 +23,11 @@ export class ContainerClassy extends Component {
     this.setState({ friendName: event.target.value });
   }
 
+  addFriend = () => {
+    debugger
+    console.log('adding friend!!!');
+  }
+
   render() {
     return (
       <div>
@@ -37,6 +42,7 @@ export class ContainerClassy extends Component {
           onChange={this.changeHandler}
           type="text"
         />
+        <button onClick={this.addFriend}>Add friend!!</button>
       </div>
     );
   }
