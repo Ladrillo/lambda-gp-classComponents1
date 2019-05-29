@@ -34,5 +34,5 @@ export function ContainerFunctional() {
 }
 
 function Displayer({ type, count }) {
-  return <div>I am {type} and my count is {count}</div>;
+  return <div>{type} count is {count}</div>;
 }
