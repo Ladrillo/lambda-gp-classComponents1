@@ -13,6 +13,7 @@ export class ContainerClassy extends Component {
     super(props);
     this.state = {
       count: 0,
+      happy: true,
     };
   }
 
@@ -25,6 +26,7 @@ export class ContainerClassy extends Component {
 
 export function ContainerFunctional() {
   const [count, setCount] = useState(0);
+  const [happy, setHappy] = useState(true);
 
   return (
     <div>I am functional and count is {count}</div>
