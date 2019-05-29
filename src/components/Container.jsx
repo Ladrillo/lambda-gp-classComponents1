@@ -11,7 +11,7 @@ const initialFriendsList = [
 export class ContainerClassy extends Component {
   render() {
     return (
-      <div>I am classy</div>
+      <div>I am classy!</div>
     );
   }
 }
