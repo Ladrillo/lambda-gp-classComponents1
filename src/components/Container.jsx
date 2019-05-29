@@ -19,7 +19,7 @@ export class ContainerClassy extends Component {
 
   render() {
     return (
-      <div>I am classy and my count is {this.state.count}</div>
+      <Displayer type="class component" count={this.state.count} />
     );
   }
 }
@@ -29,6 +29,10 @@ export function ContainerFunctional() {
   const [happy, setHappy] = useState(true);
 
   return (
-    <div>I am functional and count is {count}</div>
+    <Displayer type="functional" count={count} />
   );
+}
+
+function Displayer({ type, count }) {
+  return <div>I am {type} and my count is {count}</div>;
 }
