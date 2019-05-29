@@ -9,18 +9,24 @@ const initialFriendsList = [
 
 // let's display a counter along with buttons to increment and decrement
 export class ContainerClassy extends Component {
-  // no using fat arrow syntax
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0,
+    };
+  }
+
   render() {
     return (
-      <div>I am classy!!</div>
+      <div>I am classy and my count is {this.state.count}</div>
     );
   }
 }
 
 export function ContainerFunctional() {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   return (
-    <div>This is the count: {count}</div>
+    <div>I am functional and count is {count}</div>
   );
 }
