@@ -24,7 +24,15 @@ export class ContainerClassy extends Component {
   }
 
   addFriend = () => {
-    console.log('adding friend!!!');
+    const newFriend = {
+      id: uuid(),
+      name: this.state.friendName,
+      fav: false,
+    };
+
+    this.setState({
+      friendsList: this.state.friendsList.concat(newFriend),
+    });
   }
 
   render() {
