@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import uuid from 'uuid';
 
 const initialFriendsList = [
@@ -7,7 +7,8 @@ const initialFriendsList = [
   { id: '21973c2d-e74d-4ef9-bccb-d3af78a7f0f0', name: 'Sorin', fav: false },
 ];
 
-export class ContainerClassy extends React.Component {
+// let's display a counter along with buttons to increment and decrement
+export class ContainerClassy extends Component {
   render() {
     return (
       <div>I am classy</div>
