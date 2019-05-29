@@ -19,8 +19,9 @@ export class ContainerClassy extends Component {
   render() {
     return (
       <div>
+        <h3>My friends:</h3>
         {
-          
+
         }
       </div>
     );
