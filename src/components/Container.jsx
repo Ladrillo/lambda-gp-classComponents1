@@ -24,7 +24,6 @@ export class ContainerClassy extends Component {
   }
 
   addFriend = () => {
-    debugger
     console.log('adding friend!!!');
   }
 
