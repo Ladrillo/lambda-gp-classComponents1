@@ -27,9 +27,15 @@ export class ContainerClassy extends Component {
 export function ContainerFunctional() {
   const [count, setCount] = useState(0);
   const [happy, setHappy] = useState(true);
+  const increment = () => setCount(count + 1);
 
   return (
-    <Displayer type="functional" count={count} />
+    <Displayer
+      type="functional"
+      count={count}
+      increment={increment}
+      decrement={decrement}
+    />
   );
 }
 
