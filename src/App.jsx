@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom';
 import { ContainerClassy, ContainerFunctional } from './components/Container';
 import './App.less';
 
+ReactDOM.render(
+  <ContainerClassy />,
+  document.querySelector('#target1'),
+);
 
 ReactDOM.render(
-  <>
-    <ContainerClassy />
-    <ContainerFunctional />
-  </>,
-  document.querySelector('#target1'),
+  <ContainerFunctional />,
+  document.querySelector('#target2'),
 );
