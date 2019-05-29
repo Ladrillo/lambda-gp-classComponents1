@@ -13,7 +13,12 @@ export class ContainerClassy extends Component {
     super(props);
     this.state = {
       friendsList: initialFriendsList,
+      friendName: '',
     };
+  }
+
+  changerHandler = (event) => {
+
   }
 
   render() {
@@ -25,6 +30,11 @@ export class ContainerClassy extends Component {
             <div key={friendObj.id}>{friendObj.name}</div>
           ))
         }
+        <input
+          value={this.state.friendName}
+          onChange={this.changerHandler}
+          type="text"
+        />
       </div>
     );
   }
