@@ -13,13 +13,21 @@ export class ContainerClassy extends Component {
     super(props);
     this.state = {
       count: 0,
-      happy: true,
     };
   }
 
+  increment = () => this.setState({ count: this.state.count + 1 })
+
+  decrement = () => this.setState({ count: this.state.count - 1 })
+
   render() {
     return (
-      <Displayer type="class component" count={this.state.count} />
+      <Displayer
+        type="class component"
+        count={this.state.count}
+        increment={this.increment}
+        decrement={this.decrement}
+      />
     );
   }
 }
