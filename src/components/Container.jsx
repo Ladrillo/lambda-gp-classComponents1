@@ -32,8 +32,10 @@ export class ContainerClassy extends Component {
       fav: false,
     };
 
+    const newFriendsList = this.state.friendsList.concat(newFriend);
+
     this.setState({
-      friendsList: this.state.friendsList.concat(newFriend),
+      friendsList: newFriendsList,
       friendName: '',
     });
   }
